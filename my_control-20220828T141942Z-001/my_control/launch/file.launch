@@ -1,0 +1,12 @@
+<launch>
+
+<rosparam command="load" file="$(find my_control)/config/file.yaml" />
+<node pkg="turtlesim" type="turtlesim_node" name="turtle" output="screen">   </node>
+<node pkg="my_control" type="turtle_control.py" name="controller_node" output="screen">   </node>
+
+
+
+
+
+
+</launch>
